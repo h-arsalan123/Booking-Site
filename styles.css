@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(90deg, #9d9c9d, #ea6e6e); /* Gradient from pink to red */
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b; /* Yellow */
+}
+
+header nav input {
+    padding: 5px;
+    margin-left: 15px;
+    border: 2px solid #000000; /* Pinkish red */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+header nav input:focus {
+    border-color: #ffeb3b; /* Yellow */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.hotel-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Set consistent height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    text-align: center;
+    margin: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.card h3 {
+    color: #000000; /* Pinkish red */
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: #26ff00; /* Pinkish red */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #ffeb3b; /* Yellow */
+    color: black;
+}
+
+footer {
+    background: linear-gradient(90deg, #a09f9e, #e89337); /* Gradient from green to light green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form label {
+    margin: 5px 0;
+}
+
+footer form input {
+    padding: 5px;
+    margin: 5px 0;
+    border: 2px solid #000000; /* Green */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+footer form input:focus {
+    border-color: #ffeb3b; /* Yellow */
+}
+
+footer form button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+    background-color: #219d25; /* Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #3bff89; /* Yellow */
+    color: black;
+}
